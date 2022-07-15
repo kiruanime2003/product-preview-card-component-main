@@ -1,0 +1,160 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+#box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+}
+#box img {
+  height: 420px;
+  width: 300px;
+  border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%;
+}
+#box #text-content {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 33px 20px 0px 33px;
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+#box #text-content h1 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 5.5px;
+  color: hsl(228deg, 12%, 48%);
+}
+#box #text-content h2 {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 21%, 14%);
+  word-wrap: break-word;
+  width: 200px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin: 20px 0;
+  font-size: 26px;
+}
+#box #text-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(228deg, 12%, 48%);
+  word-wrap: break-word;
+  width: 240px;
+  margin-bottom: 20px;
+  line-height: 1.55;
+}
+#box #text-content div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#box #text-content div #big-cost {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: hsl(158deg, 36%, 37%);
+}
+#box #text-content div #small-cost {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228deg, 12%, 48%);
+  font-size: 11.5px;
+  text-decoration: line-through;
+  margin-left: 20px;
+}
+#box #text-content button {
+  display: block;
+  width: 220px;
+  padding: 13px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(158deg, 36%, 37%);
+  border: none;
+  margin-top: 24px;
+  border-radius: 2%;
+}
+#box #text-content button span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(0deg, 0%, 100%);
+  margin-left: 10px;
+}
+#box #text-content button:hover {
+  cursor: pointer;
+}
+#box #text-content button:active {
+  background-color: hsl(158deg, 35%, 18%);
+}
+
+@media screen and (max-width: 630px) {
+  #box {
+    flex-direction: column;
+    height: 400px;
+    transform: translate(-50%, -75%);
+  }
+  #box img {
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 2%;
+    content: url(images/image-product-mobile.jpg);
+    width: 350px;
+  }
+  #box #text-content {
+    padding: 25px;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 2%;
+  }
+  #box #text-content h1 {
+    font-size: 11.5px;
+  }
+  #box #text-content h2 {
+    width: 250px;
+    margin: 15px 0;
+  }
+  #box #text-content p {
+    font-size: 12.5px;
+    width: 280px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+  }
+  #box #text-content div {
+    margin-bottom: 20px;
+  }
+  #box #text-content div #small-cost {
+    margin-left: 30px;
+  }
+  #box #text-content button {
+    width: 290px;
+    padding: 13px 0;
+    margin-top: 18px;
+    border-radius: 2%;
+  }
+  #box #text-content button span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: hsl(0deg, 0%, 100%);
+    margin-left: 10px;
+  }
+  #box #text-content button:hover {
+    cursor: pointer;
+  }
+  #box #text-content button:active {
+    background-color: hsl(158deg, 35%, 18%);
+  }
+}/*# sourceMappingURL=styles.css.map */

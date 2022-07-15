@@ -1,0 +1,189 @@
+$darkCyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+$veryDarkBlue: hsl(212, 21%, 14%);
+$darkGrayishBlue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $cream;
+}
+
+#box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    
+    img{
+        height: 420px;
+        width: 300px;
+        border-top-left-radius: 2%;
+        border-bottom-left-radius: 2%;
+    }
+
+    #text-content{
+        background-color: $white;
+        padding: 33px 20px 0px 33px;
+        border-top-right-radius: 2%;
+        border-bottom-right-radius: 2%;
+
+        h1{
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 5.5px;
+            color: $darkGrayishBlue;
+        }
+
+        h2{
+            font-family: 'Fraunces', serif;
+            color: $veryDarkBlue;
+            word-wrap: break-word;
+            width: 200px;
+            line-height: 1.1;
+            font-weight: 700;
+            margin: 20px 0;
+            font-size: 26px;
+        }
+
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: $darkGrayishBlue;
+            word-wrap: break-word;
+            width: 240px;
+            margin-bottom: 20px;
+            line-height: 1.55;
+        }
+
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            #big-cost{
+                font-family: 'Fraunces', serif;
+                font-weight: 700;
+                font-size: 30px;
+                color: $darkCyan;
+            }
+    
+            #small-cost{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                color: $darkGrayishBlue;
+                font-size: 11.5px;
+                text-decoration: line-through;
+                margin-left: 20px;
+            }
+        }
+
+        button{
+            display: block;
+            width: 220px;
+            padding: 13px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: $darkCyan;
+            border: none;
+            margin-top: 24px;
+            border-radius: 2%;
+
+            span{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                color: $white;
+                margin-left: 10px;
+            }
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
+
+        button:active{
+            background-color: hsl(158, 35%, 18%);
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #box{
+        flex-direction: column;
+        height: 400px;
+        transform: translate(-50%, -75%);
+
+        img{
+            border-bottom-left-radius: 0%;
+            border-top-right-radius: 2%;
+            content: url(images/image-product-mobile.jpg);
+            width: 350px;
+        }
+
+        #text-content{
+            padding: 25px;
+            border-top-right-radius: 0%;
+            border-bottom-left-radius: 2%;
+
+            h1{
+                font-size: 11.5px;
+            }
+    
+            h2{
+                width: 250px;
+                margin: 15px 0;
+            }
+    
+            p{
+                font-size: 12.5px;
+                width: 280px;
+                margin-bottom: 40px;
+                line-height: 1.8;
+            }
+    
+            div{
+                margin-bottom: 20px;
+        
+                #small-cost{
+                    margin-left: 30px;
+                }
+            }
+    
+            button{
+                width: 290px;
+                padding: 13px 0;
+                margin-top: 18px;
+                border-radius: 2%;
+    
+                span{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $white;
+                    margin-left: 10px;
+                }
+            }
+    
+            button:hover{
+                cursor: pointer;
+            }
+    
+            button:active{
+                background-color: hsl(158, 35%, 18%);
+            }
+        }
+    }
+}
