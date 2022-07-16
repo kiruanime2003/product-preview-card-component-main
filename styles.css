@@ -98,8 +98,6 @@ body {
 }
 #box #text-content button:hover {
   cursor: pointer;
-}
-#box #text-content button:active {
   background-color: hsl(158deg, 35%, 18%);
 }
 
